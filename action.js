@@ -11,7 +11,7 @@ ArrowTop = document.querySelector("#arrow__top")
 divProfile = document.querySelector("#div__profile")
 Profile = document.querySelector("#profile")
 AvatarIn = document.querySelector("#avatar__in")
-Nickname = document.querySelector("#nickname")
+Nickname = document.querySelect("#nickname")
 RealName = document.querySelector("#realName")
 divLink = document.querySelectorAll(".div-link")
 Coder = document.querySelector("#coder")
@@ -19,7 +19,7 @@ OnOff_showProfile = false
 
 window.onload = () => {
     divMain.style.background = `url(${ImgLink_Background})`
-    Avatar.src = "https://drive.google.com/uc?export=download&id=1yAcD1fTcNYiGl-uW16iOlSNKfxjmt7Kw"
+    Avatar.src = "https://i.imgur.com/PQr20n4.png"
     AvatarIn.src = ImgLink_Avatar
     Nickname.innerText = Nickname_Profile
     RealName.innerText = RealName_Profile
@@ -27,7 +27,7 @@ window.onload = () => {
         divLink[i].onclick = () => {
             if (OnOff_showProfile == true) {
                 if (i == 1) {
-                    alert("Kết Bạn Với " + LinkInformation[i])
+                    alert("Donated " + LinkInformation[i])
                 } else {
                     window.location = LinkInformation[i]
                 }
@@ -37,7 +37,7 @@ window.onload = () => {
 
     Coder.onclick = () => {
         if (OnOff_showProfile == true) {
-            window.location = "https://www.facebook.com/vinhtran.karasuma.206/"
+            window.location = "https://www.facebook.com/cuongpahm2k8?mibextid=ZbWK"
         }
     }
 
